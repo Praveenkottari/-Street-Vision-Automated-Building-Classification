@@ -3,7 +3,7 @@ Managing earthquake risks is essential due to the high potential for loss of lif
 
 
 ## Dataset
-The dataset for this project includes 2,516 grayscale images, each with a resolution of 300x400 pixels. These images represent five distinct building classes, differentiated by materials and structural characteristics as outlined in Table. Captured from various streets, the images offer diverse perspectives and building conditions, with each class exhibiting unique texture patterns related to its structural properties. Despite these distinctions, common features across classes increase the classification complexity. Annotations highlight key structural features to guide model training, but the dataset includes misclassified samples and class imbalances, necessitating rigorous data cleaning.
+The dataset for this project taken from Google Street View(GSV)-api which includes 2,516 grayscale images, each with a resolution of 300x400 pixels. These images represent five distinct building classes, differentiated by materials and structural characteristics as outlined in Table. Captured from various streets, the images offer diverse perspectives and building conditions, with each class exhibiting unique texture patterns related to its structural properties. Despite these distinctions, common features across classes increase the classification complexity. Annotations highlight key structural features to guide model training, but the dataset includes misclassified samples and class imbalances, necessitating rigorous data cleaning.
 
 Descriptions of these defect classes along with the number of image samples available for each:
 
@@ -34,5 +34,14 @@ Descriptions of these defect classes along with the number of image samples avai
 
 
 
-## Benchmarking
+## Benchmarking Results
+| Model   | Precision | Recall | F-1 Score | Test Accuracy | Remark |
+|---------|-----------|--------|-----------|---------------|--------|
+| **Classical models**    | - | - | - | 0.297(SVM) | Sensitivity to high-dimensional data, difficult to find a clear hyperplane for separation |
+| **Resnet50** |  0.51 | 0.51 | 0.50 | 0.46 | Lacks data to capture global patterns relying heavily on local feature extraction |
+| **EfficentNet** | 0.52 | 0.51 | 0.51 | 0.481 | Sensitive to insufficient data, scaling approach may not capture intricate global features|
+| **Vit**  |  0.57  | 0.58 | 0.57 | 0.539 | Not able to fully understand global relationships |
+| **DeiT** | 0.63 | 0.64 | 0.63 | 0.531 | Not effectively capture subtle differences in features, leading to suboptimal performance |
+| **SWin Base** | 0.67 | 0.66 | 0.66 | 0.606 | Efficiently captured both local and global feature still require more data /fine-tuning for optimal results |
+
 
