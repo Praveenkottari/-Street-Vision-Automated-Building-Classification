@@ -30,6 +30,9 @@ Descriptions of these defect classes along with the number of image samples avai
   </tr>
 </table>
 
+![Flowchart](class_counts_comparison.png)
+
+<p align="center"><i>Figure : Classwise sample counts</i></p>
 
 
 
