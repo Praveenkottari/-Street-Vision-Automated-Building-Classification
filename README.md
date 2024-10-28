@@ -19,26 +19,18 @@ Descriptions of these defect classes along with the number of image samples avai
 
 <table border="0" style="text-align: center;">
   <tr>
-    <td style="text-align: center;"><img src="sample data/1/17_A.jpg" width="200" /><br><b>(a) Algae</b></td>
-    <td style="text-align: center;"><img src="sample images/class_images/major crack/cls01_020.jpg" width="200" /><br><b>(b) Major Crack</b></td>
-    <td style="text-align: center;"><img src="sample images/class_images/minor crack/cls02_031.jpg" width="200" /><br><b>(c) Minor Crack</b></td>
+    <td style="text-align: center;"><img src="sample data/1/17_A.jpg" width="200" /><br><b>(a) Class 1</b></td>
+    <td style="text-align: center;"><img src="sample data/2/16_B.jpg" width="200" /><br><b>(b) Class 2</b></td>
+    <td style="text-align: center;"><img src="sample data/3/59_C.jpg" width="200" /><br><b>(c) Class 3</b></td>
   
   </tr>
   <tr>
-    <td style="text-align: center;"><img src="sample images/class_images/spalling/cls05_013.jpg" width="200" /><br><b>(e) Spalling</b></td>
-    <td style="text-align: center;"><img src="sample images/class_images/stain/cls06_082.jpg" width="200" /><br><b>(f) Stain</b></td>
+    <td style="text-align: center;"><img src="sample data/4/119_D.jpg" width="200" /><br><b>(e) Class 4</b></td>
+    <td style="text-align: center;"><img src="sample data/5/22_S.jpg" width="200" /><br><b>(f) Class 5</b></td>
   </tr>
 </table>
 
 
-## Dataset preparation
-
-The image dataset collection began by inspecting and identifying building structures that were in a maintained condition. More than 50 buildings, constructed at different times and with ages ranging from 10 to 60 years, were visited. For image capture, we used a smartphone with a high-resolution camera, and all samples were taken approximately 1 meter away from the walls. The images were collected both indoors and outdoors across various campus buildings, which had different material surfaces such as concrete and stone. Afterward, the collected data were assembled for preprocessing and cleaning. Annotation was then performed with respect to the specific defect classes, generating the final dataset.
-
-
-![Flowchart](https://github.com/Praveenkottari/BD3-Dataset/blob/3d45ea59b1c514bea5e6a3c52c103986a5953b36/sample%20images/markdown_images/flow-chart3.png)
-
-<p align="center"><i>Figure : Dataset preparation work-flow</i></p>
 
 
 
